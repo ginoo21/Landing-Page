@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan Laravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="c:\Users\ASUS\Downloads\Teknologi Informasi\Semester 3\Pemrograman Full Steck\LANDING PAGE ANGGI\THE NEW LANDING PAGE\books.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></i> RangkumanKu
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#materi">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="fw-bold animate__animated animate__fadeInDown">Mengenal Laravel</h1>
+                    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Framework PHP yang Mengubah Cara Kita Mengembangkan Web</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="fitur" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Fitur-Fitur Utama Laravel</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-terminal"></i>
+                                </div>
+                                <h5 class="card-title">Artisan CLI</h5>
+                                <p class="card-text">Command-line interface yang powerful untuk mengelola aplikasi Laravel.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="artisan">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h5 class="card-title">Eloquent ORM</h5>
+                                <p class="card-text">Object-Relational Mapping yang elegan untuk interaksi dengan database.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="eloquent">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h5 class="card-title">Blade Templating</h5>
+                                <p class="card-text">Template engine yang powerful dan mudah digunakan.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="blade">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <h5 class="card-title">Routing</h5>
+                                <p class="card-text">Sistem routing yang fleksibel dan mudah dikonfigurasi.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="routing">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h5 class="card-title">Middleware</h5>
+                                <p class="card-text">Mekanisme penyaringan HTTP request dalam aplikasi.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="middleware">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100">
+                            <div class="card-body">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h5 class="card-title">Security Features</h5>
+                                <p class="card-text">Fitur keamanan bawaan untuk melindungi aplikasi.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="security">
+                                    Pelajari Lebih Lanjut
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="arsitektur" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Arsitektur Laravel</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card architecture-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-sitemap me-2"></i> Model-View-Controller (MVC)
+                                </h5>
+                                <p class="card-text">Arsitektur MVC yang memisahkan logika aplikasi dari presentasi.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="mvc">
+                                    Detail MVC
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card architecture-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-box me-2"></i> Service Container
+                                </h5>
+                                <p class="card-text">Powerful dependency injection container untuk mengelola class dependencies.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="container">
+                                    Detail Container
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ecosystem" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Ecosystem Laravel</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card ecosystem-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-box-open me-2"></i> Composer
+                                </h5>
+                                <p class="card-text">Package manager PHP untuk mengelola dependencies.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="composer">
+                                    Tentang Composer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card ecosystem-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-cubes me-2"></i> Sistem Paket
+                                </h5>
+                                <p class="card-text">Ekosistem package yang luas untuk memperluas fungsi Laravel.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="packages">
+                                    Tentang Paket
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="keunggulan" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Keunggulan Laravel</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card advantage-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-book me-2"></i> Dokumentasi Lengkap
+                                </h5>
+                                <p class="card-text">Laravel dikenal memiliki dokumentasi yang sangat baik dan terorganisir dengan rapi. Dokumentasi ini mencakup penjelasan mendetail tentang setiap fitur dan komponen yang ada dalam framework.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card advantage-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-users me-2"></i> Komunitas Besar
+                                </h5>
+                                <p class="card-text">Salah satu keunggulan terbesar Laravel adalah komunitasnya yang besar dan aktif. Komunitas ini terdiri dari ribuan pengembang di seluruh dunia yang saling berbagi pengetahuan, pengalaman, dan solusi terhadap berbagai masalah
+                                    yang dihadapi saat menggunakan Laravel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card advantage-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-sync me-2"></i> Regular Updates
+                                </h5>
+                                <p class="card-text">Laravel secara teratur merilis pembaruan yang membawa fitur-fitur baru serta perbaikan keamanan yang penting. Pembaruan ini tidak hanya memastikan bahwa framework tetap relevan dengan perkembangan teknologi terbaru tetapi
+                                    juga memberikan jaminan bahwa aplikasi yang dibangun menggunakan Laravel tetap aman dari potensi kerentanan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalasi" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">Instalasi Laravel</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card installation-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-folder-tree me-2"></i> Struktur Direktori
+                                </h5>
+                                <p class="card-text">Panduan struktur folder Laravel.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="directory">
+                                    Lihat Struktur
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card installation-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-database me-2"></i> Penggunaan Database
+                                </h5>
+                                <p class="card-text">Konfigurasi dan penggunaan database.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="database">
+                                    Setup Database
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card installation-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="fas fa-code-branch me-2"></i> Migrasi Database
+                                </h5>
+                                <p class="card-text">Cara mengelola struktur database.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" data-feature="migration">
+                                    Tentang Migrasi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailModalLabel">Detail Fitur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Tentang Kami</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi platform pembelajaran Laravel terdepan di Indonesia dengan menyediakan materi berkualitas dan mudah dipahami.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3>Misi Kami</h3>
+                    <p>Membantu developer Indonesia menguasai Laravel melalui materi yang terstruktur dan pembelajaran yang interaktif.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Hubungi Kami</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>RangkumanKu</h5>
+                    <p>Platform pembelajaran Laravel terbaik untuk developer Indonesia.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#materi">Materi</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Sosial Media</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 RangkumanKu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+</ul>
+</div>
+<div class="col-md-4 mb-4">
+    <h5>Sosial Media</h5>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+</div>
+<div class="text-center mt-4">
+    <p>&copy; 2024 RangkumnKu. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
